@@ -22,7 +22,7 @@ function inhabitent_theme_body_classes( $classes ) {
 add_filter( 'body_class', 'inhabitent_theme_body_classes' );
 
 
-function inhabitent_login_logo() {
+function inhabitent_theme_login_logo() {
 	$logo_url = get_template_directory_uri().'/images/logos/inhabitent-logo-text-dark.svg';
 
 	echo '<style> 
@@ -40,7 +40,7 @@ function inhabitent_login_logo() {
 }
 add_action( 'login_head', 'inhabitent_login_logo' );
 
-function inhabitent_login_url() {
+function inhabitent_theme_login_url() {
 return get_site_url();
 }
 add_filter('login_headerurl', 'inhabitent_login_url');
