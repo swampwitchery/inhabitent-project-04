@@ -9,10 +9,21 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
         <div class="banner">
         <img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg" />
         </div>
+
+		<section class="shopping-area">
+           <?php $product_items=get_terms('product_type');?>
+           <?php foreach ( $product_items as $term ) : setup_postdata( $term ); ?>
+              <div class="product-stuff">
+                 <img src=<?php echo get_template_directory_uri().'/images/product-type-icons/' . $term->slug . '.svg'?>>
+                 <p><?php echo $term->description ?></p>
+                 <a href=<?php echo get_term_link($term)?>> <?php echo $term->name?> Stuff</a>
+              </div>
+           <?php endforeach; wp_reset_postdata(); ?>
+		</section>
+
 
 		<?php if ( have_posts() ) : ?>
 
@@ -22,7 +33,6 @@ get_header(); ?>
 				</header>
 			<?php endif; ?>
 
-			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content' ); ?>
@@ -44,10 +54,11 @@ get_header(); ?>
 
        endforeach;
 
-       wp_reset_postdata();
-       ?>
+       wp_reset_postdata(); ?>
 
 			<?php endwhile; ?>
+
+
 
 			<?php the_posts_navigation(); ?>
 
@@ -57,6 +68,7 @@ get_header(); ?>
 
 		<?php endif; ?>
 
+		   </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
