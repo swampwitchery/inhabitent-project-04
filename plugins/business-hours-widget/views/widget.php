@@ -14,4 +14,3 @@
 <span class="day-of-week">Sunday:</span> <?php echo $sunday ?>
 </p>
 <?php endif; ?>
-

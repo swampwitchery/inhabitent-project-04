@@ -1,0 +1,21 @@
+.site-footer {
+    background: url(../../images/dark-wood.png) center no-repeat;
+    background-size: 100%;
+}
+
+.container{
+    display: flex;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+
+}
+
