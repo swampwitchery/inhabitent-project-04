@@ -9,9 +9,10 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-        <div class="banner">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg" />
-        </div>
+
+      <div class="main-logo">
+      <img src=<?php echo get_template_directory_uri().'/images/logos/inhabitent-logo-full.svg'?>>
+</div>
 
 		<section class="shopping-area">
            <?php $product_items=get_terms('product_type');?>
@@ -40,7 +41,8 @@ get_header(); ?>
                 <?php $product_posts = inhabitent_get_latest_posts(); ?>
                 <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
 
-            <div>
+            <div class="entries">
+            <h2>Inhabitent Journal</h2>
        <?php if(has_post_thumbnail()): ?>
        <?php the_post_thumbnail('medium'); ?>
        <?php endif; ?>
@@ -67,7 +69,6 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-
 		   </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->

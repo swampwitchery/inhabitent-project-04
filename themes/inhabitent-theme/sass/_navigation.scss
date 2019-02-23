@@ -5,6 +5,7 @@
 /* Links */
 
 a {
+	
 	color: $color__link;
 
 	&:visited {
@@ -25,6 +26,12 @@ a {
 }
 
 /* Menus */
+
+.site-header {
+    display: flex;
+    background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+    background-size: 50px 33px;
+}
 
 .main-navigation {
 	clear: both;
@@ -130,3 +137,6 @@ a {
 		width: 50%;
 	}
 }
+
+
+

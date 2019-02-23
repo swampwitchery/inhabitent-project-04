@@ -15,11 +15,9 @@
 							<h3>Contact Info</h3>
 							<p><i class="fa fa-envelope"></i> info@inhabitent.com</p>
 							<p><i class="fas fa-phone"></i> 778-456-7891</p>
-						</div>
-						<div class="social-media">
-							<i class="fab fa-facebook-square"></i>
+							<p><i class="fab fa-facebook-square"></i>
 							<i class="fab fa-twitter-square"></i>
-							<i class="fab fa-google-plus-square"></i>
+							<i class="fab fa-google-plus-square"></i></p>
 						</div>
 
 					<div class="business-hours">
@@ -28,11 +26,12 @@
 						<p>Saturday: 10am to 2pm</p>
 						<p>Sunday: Closed</p>
 					</div>
+					<div class="logo">
+					<img src=<?php echo get_template_directory_uri().'/images/logos/inhabitent-logo-text.svg'?>>
+					</div>
+					</div>
 					<div class="copyright">
 						<p>Copyright &copy; 2019 Inhabitent</p>
-					</div>
-					<div class="logo">
-						<img src=<?php echo get_template_directory_uri().'/images/logos/inhabitent-logo-text.svg'?>>
 					</div>
 				</div><!-- #page -->	
 			</footer><!-- #colophon -->

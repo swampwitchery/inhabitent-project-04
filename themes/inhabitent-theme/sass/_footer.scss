@@ -1,21 +1,37 @@
 .site-footer {
-    background: url(../../images/dark-wood.png) center no-repeat;
-    background-size: 100%;
+    background: url(../../images/dark-wood.png) center repeat;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.75;
+   // height: 100%;
+}
+h3 {
+    color: #d99054;
+    text-transform: uppercase;
+    font-family: Novecento Sans Web;
+}
+
+.business-hours{
+    font-family: Merriweather Web;
+    flex: 1 0 25%;
+}
+
+.contact-info{
+    font-family: Merriweather Web;
+    flex: 1 0 25%;
+
+
 }
 
 .container{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.contact-info {
-    display: flex;
-    flex-direction: column;
-
+.copyright {
+    text-align: center;
+    font-family: Novecento Sans Web;
 }
 
-.logo {
-    display: flex;
-    justify-content: center;
-
-}
 
