@@ -1,0 +1,37 @@
+.home{
+
+    .site-header{
+        position: absolute;
+    }
+
+    header{
+        display: flex;
+
+        .container{
+            margin: 10px;
+            
+            }
+            
+            .tent-img img{
+            width: 30%;
+            }
+            
+            .main-navigation {
+                
+                .menu-item{
+                    padding: 5px;
+                    text-transform: uppercase;
+
+                    a{
+                        color: #fff;
+                    }
+                }
+
+    }
+    .search-form a{
+        color: #fff;
+    }
+}
+
+}
+

@@ -10,9 +10,11 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-      <div class="main-logo">
+      <section class="main-logo">
       <img src=<?php echo get_template_directory_uri().'/images/logos/inhabitent-logo-full.svg'?>>
-</div>
+</section>
+
+      <h2 class="shop"> Shop Stuff </h2>
 
 		<section class="shopping-area">
            <?php $product_items=get_terms('product_type');?>
@@ -25,6 +27,7 @@ get_header(); ?>
            <?php endforeach; wp_reset_postdata(); ?>
 		</section>
 
+      <h2 class="shop"> Inhabitent Journal </h2>
 
 		<?php if ( have_posts() ) : ?>
 
@@ -41,13 +44,13 @@ get_header(); ?>
                 <?php $product_posts = inhabitent_get_latest_posts(); ?>
                 <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
 
+                
             <div class="entries">
-            <h2>Inhabitent Journal</h2>
        <?php if(has_post_thumbnail()): ?>
        <?php the_post_thumbnail('medium'); ?>
        <?php endif; ?>
 
-       <a href="<?php the_permalink(); ?>">Read Entry</a>
+       <p> <a href="<?php the_permalink(); ?>">Read Entry</a>
 
        <?php
          the_date();
@@ -62,7 +65,8 @@ get_header(); ?>
 
 
 
-			<?php the_posts_navigation(); ?>
+         <?php the_posts_navigation(); ?>
+      </p>
 
 		<?php else : ?>
 

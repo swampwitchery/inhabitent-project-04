@@ -282,14 +282,25 @@ textarea {
   line-height: 1.5; }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Novecento Sans Web, sans-serif;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
   clear: both; }
 
 /* Copy */
 p {
   margin-bottom: 1.5rem; }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic; }
 
 blockquote {
@@ -309,16 +320,21 @@ pre {
   overflow: auto;
   padding: 1.6rem; }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #666;
   cursor: help; }
 
-mark, ins {
+mark,
+ins {
   background: #fff9c0;
   text-decoration: none; }
 
@@ -499,6 +515,25 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+.home .site-header {
+  position: absolute; }
+
+.home header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .home header .container {
+    margin: 10px; }
+  .home header .tent-img img {
+    width: 30%; }
+  .home header .main-navigation .menu-item {
+    padding: 5px;
+    text-transform: uppercase; }
+    .home header .main-navigation .menu-item a {
+      color: #fff; }
+  .home header .search-form a {
+    color: #fff; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -515,13 +550,6 @@ a {
     outline: 0; }
 
 /* Menus */
-.site-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
-  background-size: 50px 33px; }
-
 .main-navigation {
   clear: both;
   display: block;
@@ -701,7 +729,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: url(../../images/home-hero.jpg) no-repeat center;
+  background: url(../../images/home-hero.jpg) no-repeat top;
   height: 100vh;
   background-size: cover;
   -webkit-box-orient: vertical;
@@ -714,6 +742,14 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+
+/* About Page */
+.page-template .hero-image-header {
+  height: 100vh; }
+
+.page-template .entry-title {
+  color: #fff;
+  font-size: 3em; }
 
 /*--------------------------------------------------------------
 # Media
@@ -779,19 +815,53 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.product-stuff {
+/* Shop Stuff Area */
+.home .shop {
+  text-align: center;
+  padding: 20px;
+  font-size: 2em;
+  font-weight: normal;
+  font-style: normal; }
+
+.home .shopping-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center; }
+
+.home .product-stuff {
+  padding: 1em;
+  border: 1px solid #e1e1e1;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 18%;
+          flex: 0 1 18%; }
+  .home .product-stuff img {
+    width: 30%;
+    height: 30%; }
+
+.home h2 a {
+  display: none; }
+
+/* Journal Posts Area */
+.home .entries {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .product-stuff img {
-    width: 5%;
-    height: 5%; }
+  .home .entries p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 .site-footer {
   background: url(../../images/dark-wood.png) center repeat;
-  font-size: 16px;
+  font-size: .90em;
   color: #fff;
   line-height: 1.75; }
+  .site-footer img {
+    width: 60%; }
 
 h3 {
   color: #d99054;
@@ -823,4 +893,5 @@ h3 {
 
 .copyright {
   text-align: center;
-  font-family: Novecento Sans Web; }
+  font-family: Novecento Sans Web;
+  text-transform: uppercase; }

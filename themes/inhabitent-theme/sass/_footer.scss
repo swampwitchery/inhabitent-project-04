@@ -1,9 +1,14 @@
 .site-footer {
     background: url(../../images/dark-wood.png) center repeat;
-    font-size: 16px;
+    font-size: .90em;
     color: #fff;
     line-height: 1.75;
    // height: 100%;
+
+   img{
+    width: 60%;
+}
+
 }
 h3 {
     color: #d99054;
@@ -32,6 +37,8 @@ h3 {
 .copyright {
     text-align: center;
     font-family: Novecento Sans Web;
+    text-transform: uppercase;
+
 }
 
 

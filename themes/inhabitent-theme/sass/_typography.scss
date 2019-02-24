@@ -7,74 +7,90 @@ button,
 input,
 select,
 textarea {
-	color: $color__text-main;
-	font-family: $font__main;
-	@include font-size(1);
-	line-height: $font__line-height-body;
+    color: $color__text-main;
+    font-family: $font__main;
+    @include font-size(1);
+    line-height: $font__line-height-body;
 }
 
 /* Headings */
 
-h1, h2, h3, h4, h5, h6 {
-	clear: both;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Novecento Sans Web, sans-serif;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    clear: both;
 }
 
 /* Copy */
 
 p {
-	margin-bottom: $base__space-unit;
+    margin-bottom: $base__space-unit;
 }
 
-dfn, cite, em, i {
-	font-style: italic;
+dfn,
+cite,
+em,
+i {
+    font-style: italic;
 }
 
 blockquote {
-	margin: 0 $base__space-unit;
+    margin: 0 $base__space-unit;
 }
 
 address {
-	margin: 0 0 $base__space-unit;
+    margin: 0 0 $base__space-unit;
 }
 
 pre {
-	background: $color__background-pre;
-	font-family: $font__pre;
-	@include font-size(0.9375);
-	line-height: $font__line-height-pre;
-	margin-bottom: 1.6rem;
-	max-width: 100%;
-	overflow: auto;
-	padding: 1.6rem;
+    background: $color__background-pre;
+    font-family: $font__pre;
+    @include font-size(0.9375);
+    line-height: $font__line-height-pre;
+    margin-bottom: 1.6rem;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1.6rem;
 }
 
-code, kbd, tt, var {
-	font-family: $font__code;
-	@include font-size(0.9375);
+code,
+kbd,
+tt,
+var {
+    font-family: $font__code;
+    @include font-size(0.9375);
 }
 
-abbr, acronym {
-	border-bottom: 1px dotted $color__border-abbr;
-	cursor: help;
+abbr,
+acronym {
+    border-bottom: 1px dotted $color__border-abbr;
+    cursor: help;
 }
 
-mark, ins {
-	background: $color__background-ins;
-	text-decoration: none;
+mark,
+ins {
+    background: $color__background-ins;
+    text-decoration: none;
 }
 
 big {
-	font-size: 125%;
+    font-size: 125%;
 }
 
 @font-face {
     font-family: 'Merriweather Web';
     src: url('../../fonts/merriweather-light-webfont.eot');
     src: url('../../fonts/merriweather-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/merriweather-light-webfont.woff2') format('woff2'),
-         url('../../fonts/merriweather-light-webfont.woff') format('woff'),
-         url('../../fonts/merriweather-light-webfont.ttf') format('truetype'),
-         url('../../fonts/merriweather-light-webfont.svg#merriweatherlight') format('svg');
+        url('../../fonts/merriweather-light-webfont.woff2') format('woff2'),
+        url('../../fonts/merriweather-light-webfont.woff') format('woff'),
+        url('../../fonts/merriweather-light-webfont.ttf') format('truetype'),
+        url('../../fonts/merriweather-light-webfont.svg#merriweatherlight') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -83,10 +99,10 @@ big {
     font-family: 'Merriweather Web';
     src: url('../../fonts/merriweather-lightitalic-webfont.eot');
     src: url('../../fonts/merriweather-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/merriweather-lightitalic-webfont.woff2') format('woff2'),
-         url('../../fonts/merriweather-lightitalic-webfont.woff') format('woff'),
-         url('../../fonts/merriweather-lightitalic-webfont.ttf') format('truetype'),
-         url('../../fonts/merriweather-lightitalic-webfont.svg#merriweatherlight_italic') format('svg');
+        url('../../fonts/merriweather-lightitalic-webfont.woff2') format('woff2'),
+        url('../../fonts/merriweather-lightitalic-webfont.woff') format('woff'),
+        url('../../fonts/merriweather-lightitalic-webfont.ttf') format('truetype'),
+        url('../../fonts/merriweather-lightitalic-webfont.svg#merriweatherlight_italic') format('svg');
     font-weight: normal;
     font-style: italic;
 }
@@ -95,10 +111,10 @@ big {
     font-family: 'Merriweather Web';
     src: url('../../fonts/merriweather-bold-webfont.eot');
     src: url('../../fonts/merriweather-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/merriweather-bold-webfont.woff2') format('woff2'),
-         url('../../fonts/merriweather-bold-webfont.woff') format('woff'),
-         url('../../fonts/merriweather-bold-webfont.ttf') format('truetype'),
-         url('../../fonts/merriweather-bold-webfont.svg#merriweatherbold') format('svg');
+        url('../../fonts/merriweather-bold-webfont.woff2') format('woff2'),
+        url('../../fonts/merriweather-bold-webfont.woff') format('woff'),
+        url('../../fonts/merriweather-bold-webfont.ttf') format('truetype'),
+        url('../../fonts/merriweather-bold-webfont.svg#merriweatherbold') format('svg');
     font-weight: bold;
     font-style: normal;
 }
@@ -107,10 +123,10 @@ big {
     font-family: 'Merriweather Web';
     src: url('../../fonts/merriweather-bolditalic-webfont.eot');
     src: url('../../fonts/merriweather-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/merriweather-bolditalic-webfont.woff2') format('woff2'),
-         url('../../fonts/merriweather-bolditalic-webfont.woff') format('woff'),
-         url('../../fonts/merriweather-bolditalic-webfont.ttf') format('truetype'),
-         url('../../fonts/merriweather-bolditalic-webfont.svg#merriweatherbold_italic') format('svg');
+        url('../../fonts/merriweather-bolditalic-webfont.woff2') format('woff2'),
+        url('../../fonts/merriweather-bolditalic-webfont.woff') format('woff'),
+        url('../../fonts/merriweather-bolditalic-webfont.ttf') format('truetype'),
+        url('../../fonts/merriweather-bolditalic-webfont.svg#merriweatherbold_italic') format('svg');
     font-weight: bold;
     font-style: italic;
 }
@@ -119,10 +135,10 @@ big {
     font-family: 'Novecento Sans Web';
     src: url('../../fonts/novecentosanswide-normal-webfont.eot');
     src: url('../../fonts/novecentosanswide-normal-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/novecentosanswide-normal-webfont.woff2') format('woff2'),
-         url('../../fonts/novecentosanswide-normal-webfont.woff') format('woff'),
-         url('../../fonts/novecentosanswide-normal-webfont.ttf') format('truetype'),
-         url('../../fonts/novecentosanswide-normal-webfont.svg#novecento_sans_widenormal') format('svg');
+        url('../../fonts/novecentosanswide-normal-webfont.woff2') format('woff2'),
+        url('../../fonts/novecentosanswide-normal-webfont.woff') format('woff'),
+        url('../../fonts/novecentosanswide-normal-webfont.ttf') format('truetype'),
+        url('../../fonts/novecentosanswide-normal-webfont.svg#novecento_sans_widenormal') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -131,10 +147,10 @@ big {
     font-family: 'Novecento Sans Web';
     src: url('../../fonts/novecentosanswide-demibold-webfont.eot');
     src: url('../../fonts/novecentosanswide-demibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/novecentosanswide-demibold-webfont.woff2') format('woff2'),
-         url('../../fonts/novecentosanswide-demibold-webfont.woff') format('woff'),
-         url('../../fonts/novecentosanswide-demibold-webfont.ttf') format('truetype'),
-         url('../../fonts/novecentosanswide-demibold-webfont.svg#novecento_sans_widedemibold') format('svg');
+        url('../../fonts/novecentosanswide-demibold-webfont.woff2') format('woff2'),
+        url('../../fonts/novecentosanswide-demibold-webfont.woff') format('woff'),
+        url('../../fonts/novecentosanswide-demibold-webfont.ttf') format('truetype'),
+        url('../../fonts/novecentosanswide-demibold-webfont.svg#novecento_sans_widedemibold') format('svg');
     font-weight: bold;
     font-style: normal;
 }
