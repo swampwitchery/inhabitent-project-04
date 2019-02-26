@@ -2,11 +2,11 @@
     background: url(../../images/dark-wood.png) center repeat;
     font-size: .90em;
     color: #fff;
-    line-height: 1.75;
-   // height: 100%;
+    line-height: 1.50;
+    height: 100%;
 
    img{
-    width: 60%;
+    max-width: 60%;
 }
 
 }
@@ -18,27 +18,26 @@ h3 {
 
 .business-hours{
     font-family: Merriweather Web;
-    flex: 1 0 25%;
+    flex: 1 0 30%;
 }
 
 .contact-info{
     font-family: Merriweather Web;
-    flex: 1 0 25%;
-
-
+    flex: 0 1 20%;
+    margin-left: 10rem;
 }
 
 .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 
 .copyright {
     text-align: center;
     font-family: Novecento Sans Web;
     text-transform: uppercase;
-
 }
 
 

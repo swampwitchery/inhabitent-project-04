@@ -12,6 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+		
 
 	<?php wp_head(); ?>
 	</head>
@@ -24,25 +25,30 @@
 				<div class="container">
 					<div class="site-branding">
 						<div class="tent-img">
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src=<?php echo get_template_directory_uri().'/images/logos/inhabitent-logo-tent-white.svg'?>></a>
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src=<?php echo get_template_directory_uri().'/images/logos/inhabitent-logo-tent.svg'?>></a>
 							</div>
 						
 				
 						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 						<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-					</div>
 				</div><!-- .site-branding -->
 
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-				
-				<div class= "search-form">
-				<a href="#"><i class="fa fa-search"></i></a>			
-				</div>
-
-				</nav><!-- #site-navigation -->
+					
+					<div class="wrapper">
+						<div class="search-box">
+							<input type="text" placeholder="Search" class="input">
+							<div class="btn">
+							<i class="fa fa-search" aria-hidden="true"></i>
+							</div>
+						</div>
+						</div>				
+						
+						</nav><!-- #site-navigation -->
+					</div>
 				</div>
 			</header><!-- #masthead -->
 	

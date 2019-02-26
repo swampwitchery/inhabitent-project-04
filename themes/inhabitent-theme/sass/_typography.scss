@@ -11,6 +11,8 @@ textarea {
     font-family: $font__main;
     @include font-size(1);
     line-height: $font__line-height-body;
+    
+    
 }
 
 /* Headings */
@@ -31,6 +33,7 @@ h6 {
 
 p {
     margin-bottom: $base__space-unit;
+    
 }
 
 dfn,

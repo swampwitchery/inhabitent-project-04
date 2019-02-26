@@ -495,7 +495,7 @@ input[type="search"],
 textarea {
   color: #666;
   border: 1px solid #ccc;
-  border-radius: 3px; }
+  border-radius: 0px; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -516,23 +516,28 @@ textarea {
   width: 100%; }
 
 .home .site-header {
-  position: absolute; }
+  position: fixed;
+  width: 100%; }
+  .home .site-header a {
+    color: #248a83; }
+  .home .site-header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .home .site-header .tent-img img {
+    width: 50px; }
 
-.home header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .home header .container {
-    margin: 10px; }
-  .home header .tent-img img {
-    width: 30%; }
-  .home header .main-navigation .menu-item {
-    padding: 5px;
-    text-transform: uppercase; }
-    .home header .main-navigation .menu-item a {
-      color: #fff; }
-  .home header .search-form a {
+.page-template .site-header {
+  position: fixed;
+  width: 100%; }
+  .page-template .site-header a {
     color: #fff; }
+  .page-template .site-header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .page-template .site-header .tent-img img {
+    width: 50px; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -551,10 +556,11 @@ a {
 
 /* Menus */
 .main-navigation {
+  font-family: Novecento Sans Web,sans-serif;
+  text-transform: uppercase;
   clear: both;
   display: block;
-  float: left;
-  width: 100%; }
+  float: left; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -575,7 +581,8 @@ a {
       .main-navigation ul ul li.focus > ul {
         left: 100%; }
       .main-navigation ul ul a {
-        width: 200px; }
+        width: 200px;
+        font-family: Novecento Sans Web, sans-serif; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
@@ -584,7 +591,8 @@ a {
     position: relative; }
   .main-navigation a {
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    padding: 5px; }
 
 /* Small menu. */
 .menu-toggle,
@@ -751,6 +759,61 @@ a {
   color: #fff;
   font-size: 3em; }
 
+.page-template .about-content {
+  text-align: center;
+  margin-bottom: 3rem; }
+  .page-template .about-content p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    font-family: Merriweather Web, sans-serif;
+    font-size: .85em; }
+
+/* Products Page */
+.post-type-archive h1 {
+  text-align: center; }
+
+.post-type-archive .product-loop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 30px;
+  border-bottom: 1px dashed; }
+  .post-type-archive .product-loop a {
+    text-decoration: none;
+    margin: 20px;
+    text-transform: uppercase;
+    font-family: Novecento Sans Web, sans-serif; }
+
+.post-type-archive .archive-product-list {
+  grid-gap: 1.5rem;
+  padding-top: 30px;
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-columns: 25% 25% 25% 25%; }
+
+/* Find Us Page */
+.find-us-area {
+  display: grid;
+  grid-template-columns: 2fr 1fr; }
+
+.widget_area {
+  text-decoration: none; }
+
+.page-template-default {
+  font-family: Merriweather Web,serif;
+  font-size: .90rem; }
+  .page-template-default label {
+    font-family: Novecento Sans Web,sans-serif;
+    text-transform: uppercase; }
+  .page-template-default .entry-content iframe {
+    border: none; }
+  .page-template-default .entry-content textarea {
+    width: 50%; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -830,38 +893,102 @@ object {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  text-align: center; }
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
 
 .home .product-stuff {
   padding: 1em;
   border: 1px solid #e1e1e1;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 18%;
-          flex: 0 1 18%; }
+  border-top-width: 5px;
+  text-align: center;
+  margin: 1%; }
   .home .product-stuff img {
     width: 30%;
     height: 30%; }
+  .home .product-stuff .item-button {
+    font-family: Novecento Sans Web,sans-serif;
+    font-size: .8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #248a83;
+    color: #fff;
+    padding: .8rem 1.5rem; }
 
 .home h2 a {
   display: none; }
+
+.latest-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+
+.three-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.single-three-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  border: 1px solid #e1e1e1;
+  text-align: center;
+  margin: 1%; }
+
+.read-entry {
+  font-family: Novecento Sans Web,sans-serif;
+  font-size: .8rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid black;
+  background: #fff;
+  color: black;
+  padding: .8rem .8rem; }
 
 /* Journal Posts Area */
 .home .entries {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
-  .home .entries p {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center; }
+
+/* Latest Adventures */
+.latest-adventures .adventure-heading {
+  text-align: center;
+  padding: 20px;
+  font-size: 2em;
+  font-weight: 400;
+  font-style: normal; }
 
 .site-footer {
   background: url(../../images/dark-wood.png) center repeat;
   font-size: .90em;
   color: #fff;
-  line-height: 1.75; }
+  line-height: 1.50;
+  height: 100%; }
   .site-footer img {
-    width: 60%; }
+    max-width: 60%; }
 
 h3 {
   color: #d99054;
@@ -871,14 +998,15 @@ h3 {
 .business-hours {
   font-family: Merriweather Web;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 25%;
-          flex: 1 0 25%; }
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%; }
 
 .contact-info {
   font-family: Merriweather Web;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 25%;
-          flex: 1 0 25%; }
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
+  margin-left: 10rem; }
 
 .container {
   display: -webkit-box;
@@ -889,7 +1017,8 @@ h3 {
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  padding: 20px; }
 
 .copyright {
   text-align: center;

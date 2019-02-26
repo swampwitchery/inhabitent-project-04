@@ -22,9 +22,9 @@
 
 					<div class="business-hours">
 						<h3>Business Hours</h3>
-						<p>Monday-Friday: 9am to 5pm</p>
-						<p>Saturday: 10am to 2pm</p>
-						<p>Sunday: Closed</p>
+						<p><b>Monday-Friday:</b> 9am to 5pm</p>
+						<p><b>Saturday:</b> 10am to 2pm</p>
+						<p><b>Sunday:</b> Closed</p>
 					</div>
 					<div class="logo">
 					<img src=<?php echo get_template_directory_uri().'/images/logos/inhabitent-logo-text.svg'?>>
@@ -37,6 +37,5 @@
 			</footer><!-- #colophon -->
 	
 		<?php wp_footer(); ?>
-
 	</body>
 </html>
