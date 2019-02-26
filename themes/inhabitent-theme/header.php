@@ -38,14 +38,9 @@
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					
-					<div class="wrapper">
-						<div class="search-box">
-							<input type="text" placeholder="Search" class="input">
-							<div class="btn">
-							<i class="fa fa-search" aria-hidden="true"></i>
-							</div>
-						</div>
-						</div>				
+					<div class="search-button">
+                    <?php get_search_form(); ?>
+                </div>				
 						
 						</nav><!-- #site-navigation -->
 					</div>

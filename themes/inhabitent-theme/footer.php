@@ -22,9 +22,9 @@
 
 					<div class="business-hours">
 						<h3>Business Hours</h3>
-						<p><b>Monday-Friday:</b> 9am to 5pm</p>
-						<p><b>Saturday:</b> 10am to 2pm</p>
-						<p><b>Sunday:</b> Closed</p>
+						<p><strong>Monday-Friday:</strong> 9am to 5pm</p>
+						<p><strong>Saturday:</strong> 10am to 2pm</p>
+						<p><strong>Sunday:</strong> Closed</p>
 					</div>
 					<div class="logo">
 					<img src=<?php echo get_template_directory_uri().'/images/logos/inhabitent-logo-text.svg'?>>

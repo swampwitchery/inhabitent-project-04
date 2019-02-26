@@ -55,9 +55,10 @@ get_header(); ?>
 
          <section class="latest-adventures">
          <h2 class="adventure-heading"> Latest Adventures </h2>
-            <ul>
-            <img src='../../images/adventure-photos/canoe-girl.jpg'>
-            </ul>
+         <p>Getting Back to Nature in a Canoe</p>
+            <p>A Night with Friends at the Beach</p>
+            <p>Taking in the View at Big Mountain</p>
+            <p>Star-Gazing at the Night Sky</p>
          </section>   
 		</main><!-- #main -->
 	</div><!-- #primary -->

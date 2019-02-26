@@ -804,15 +804,40 @@ a {
   text-decoration: none; }
 
 .page-template-default {
-  font-family: Merriweather Web,serif;
+  font-family: Merriweather Web, serif;
   font-size: .90rem; }
   .page-template-default label {
-    font-family: Novecento Sans Web,sans-serif;
+    font-family: Novecento Sans Web, sans-serif;
     text-transform: uppercase; }
   .page-template-default .entry-content iframe {
     border: none; }
   .page-template-default .entry-content textarea {
     width: 50%; }
+
+/* Journal Page */
+.journal-page {
+  display: grid;
+  grid-template-columns: 2fr 1fr; }
+  .journal-page .article-area {
+    margin-bottom: 30px; }
+  .journal-page .article-area a {
+    font-family: Novecento Sans Web, sans-serif;
+    font-size: .8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid black;
+    background: #fff;
+    color: black;
+    padding: .8rem .8rem; }
+  .journal-page .entry-content {
+    font-family: Merriweather Web, serif; }
+  .journal-page .entry-meta {
+    font-family: Novecento Sans Web, sans-serif;
+    text-transform: uppercase; }
+  .journal-page .entry-title a {
+    border: none; }
+  .journal-page .entry-header img {
+    margin-top: 30px; }
 
 /*--------------------------------------------------------------
 # Media
