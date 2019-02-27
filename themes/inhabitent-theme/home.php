@@ -27,7 +27,7 @@ get_header(); ?>
 					<a href=<?php echo get_permalink();?>>Read More &rarr;</a>
 
 				<?php endwhile; ?>
-
+				
 				<?php the_posts_navigation(); ?>
 
 				<?php else : ?>
