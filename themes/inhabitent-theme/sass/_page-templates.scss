@@ -80,7 +80,6 @@
     text-transform: uppercase;
     text-decoration: none;
     border: 1px solid black;
-    background: #fff;
     color: black;
     padding: .8rem .8rem;
 }
@@ -88,29 +87,15 @@
 /* Journal Posts Area */
 
 .home {
-
     .entries {
         display: flex;
         justify-content: space-between;
         text-align: center;
-        
-
     }
-
 }
 
 /* Latest Adventures */
 
-.latest-adventures{
 
-.adventure-heading{
-    text-align: center;
-    padding: 20px;
-    font-size: 2em;
-    font-weight: 400;
-    font-style: normal;
-
-}
-}
 
 

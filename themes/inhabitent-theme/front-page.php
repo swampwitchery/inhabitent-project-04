@@ -14,7 +14,6 @@ get_header(); ?>
 </section>
 
       <h2 class="shop"> Shop Stuff </h2>
-
 		<section class="shopping-area">
            <?php $product_items=get_terms('product_type');?>
            <?php foreach ( $product_items as $term ) : setup_postdata( $term ); ?>

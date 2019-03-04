@@ -34,7 +34,7 @@
 						<div class="copyright">
 							<p>Copyright &copy; 2019 Inhabitent</p>
 						</div>
-				</div><!-- #page -->	
+					</div><!-- #page -->	
 			</footer><!-- #colophon -->
 	
 		<?php wp_footer(); ?>

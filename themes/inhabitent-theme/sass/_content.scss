@@ -3,12 +3,9 @@
 --------------------------------------------------------------*/
 
 /* Posts and pages */
-
 body{
-	max-width: 1120px;
+	font-family: $font__main;
 }
-
-
 .sticky {
 	display: block;
 }
@@ -54,7 +51,6 @@ body{
 	display: block;
 }
 
-
 .main-logo {
 	display: flex;
 	background: url(../../images/home-hero.jpg) no-repeat top;
@@ -82,11 +78,8 @@ body{
 		margin-bottom: 3rem;
 
 		p {
-			margin-left: auto;
-			margin-right: auto;
-			max-width: 700px;
-			font-family: Merriweather Web, sans-serif;
-			font-size: .85em;
+		margin: 0 auto;
+		font-size: .85em;
 		}
 	}
 }
@@ -136,7 +129,6 @@ body{
 }
 
 .page-template-default {
-	font-family: Merriweather Web, serif;
 	font-size: .90rem;
 
 
@@ -178,14 +170,6 @@ body{
 		padding: .8rem .8rem;
 	}
 
-	.entry-content {
-		font-family: Merriweather Web, serif;
-	}
-
-	.entry-meta {
-		font-family: Novecento Sans Web, sans-serif;
-		text-transform: uppercase;
-	}
 
 	.entry-title a {
 		border: none;

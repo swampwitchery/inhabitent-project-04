@@ -72,7 +72,7 @@ gulp.task('browser-sync', function () {
   ];
 
   browserSync.init(files, {
-    proxy: 'localhost:8888/project-04'
+    proxy: 'localhost:8888/inhabitent-project-04'
   });
 
   gulp.watch(files).on('change', browserSync.reload);
