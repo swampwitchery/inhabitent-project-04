@@ -6,11 +6,11 @@
  */
 
 ?>
-
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="container">
+					
 						<div class="contact-info">
 							<h3>Contact Info</h3>
 							<p><i class="fa fa-envelope"></i> info@inhabitent.com</p>
@@ -26,16 +26,17 @@
 						<p><strong>Saturday:</strong> 10am to 2pm</p>
 						<p><strong>Sunday:</strong> Closed</p>
 					</div>
+
 					<div class="logo">
-					<img src=<?php echo get_template_directory_uri().'/images/logos/inhabitent-logo-text.svg'?>>
+					<img src=<?php echo get_template_directory_uri().'/images/logos/inhabitent-logo-text.svg'?> alt="inhabitent-logo-text">
 					</div>
+
 					</div>
 					
 					<div class="copyright">
 						<p>Copyright &copy; 2019 Inhabitent</p>
 					</div>
 
-				</div><!-- #page -->	
 			</footer><!-- #colophon -->
 	
 		<?php wp_footer(); ?>

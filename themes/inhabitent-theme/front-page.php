@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">  
          <section class="main-logo">
-            <img src=<?php echo get_template_directory_uri().'/images/logos/inhabitent-logo-full.svg'?>>
+            <img src=<?php echo get_template_directory_uri().'/images/logos/inhabitent-logo-full.svg'?> alt="inhabitent-logo">
          </section>
 
 		<section class="shopping-area">
@@ -19,7 +19,7 @@ get_header(); ?>
                <?php $product_items=get_terms('product_type');?>
                <?php foreach ( $product_items as $term ) : setup_postdata( $term ); ?>
                   <div class="product-stuff">
-                     <img src=<?php echo get_template_directory_uri().'/images/product-type-icons/' . $term->slug . '.svg'?>>
+                     <img src=<?php echo get_template_directory_uri().'/images/product-type-icons/' . $term->slug . '.svg'?> alt="inhabitent-product-icon">
                      <p><?php echo $term->description ?></p>
                      <a href=<?php echo get_term_link($term)?> class="item-button"> <?php echo $term->name?> Stuff</a>
                   </div>

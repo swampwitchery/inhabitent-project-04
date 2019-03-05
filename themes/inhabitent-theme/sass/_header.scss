@@ -1,28 +1,57 @@
 
-    .site-header {
+     .site-header {
+        background-color: rgba(255,255,255,0.7);
         position: fixed;
         width: 100%;
+        border-bottom: 1px solid #e1e1e1;
 
-        a {
-            color: #248a83;
+        .container{
+            width: 1180px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0;
+            height:45px;
         }
 
-        .container,
-        nav {
+        .main-navigation{
             display: flex;
-            max-width: 1120px;
-            margin: 0 auto;
+            margin-top: 3px;
+
+            li{
+                padding: 10px;
+                font-size: $font__size;
+            }
+        }
+
+        .menu-toggle{
+            button{
+            border: none;
+            }
         }
 
         label{
-            display: none;
+           display: none;
         }
 
-        .tent-img {
+         .tent-img {
+            padding:0.5em;
+            height:50px;
             img {
-                width: 50px;
+                height: 100%;
+                width: auto;
+                margin-top: 7px;
             }
         }
-    }
+        button{
+            background: none;
+            color: #248a83;
+            padding: 0px;
+            padding-top: 1px;
+
+        }
+        .fa-search{
+            padding: 1rem;
+        }
+}
 
 

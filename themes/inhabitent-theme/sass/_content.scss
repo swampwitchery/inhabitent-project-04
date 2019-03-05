@@ -91,27 +91,34 @@ body{
 /* Products Page */
 
 .post-type-archive {
-	h1 {
-		text-align: center;
+
+
+	h2{
+		font-weight: bold;
+		color: $color__text-main;
 	}
 
 	.product-loop {
-
+		max-width: 1180px;
+		margin: 0 auto;
 		display: flex;
 		justify-content: center;
-		padding-bottom: 30px;
+		padding-bottom: 2rem;
 		border-bottom: 1px dashed;
 
 		a {
 			text-decoration: none;
-			margin: 20px;
+			margin: 2rem;
 			text-transform: uppercase;
+			font-size: 1.2rem;
 			font-family: Novecento Sans Web, sans-serif;
 
 		}
 	}
 
 	.archive-product-list {
+		max-width: 1180px;
+		margin: 0 auto;
 		grid-gap: 1.5rem;
 		padding-top: 30px;
 		display: grid;
@@ -131,10 +138,7 @@ body{
 .widget_area {
 	text-decoration: none;
 }
-
-.page-template-default {
-	font-size: .90rem;
-
+.page-template{
 
 	label {
 		font-family: Novecento Sans Web, sans-serif;

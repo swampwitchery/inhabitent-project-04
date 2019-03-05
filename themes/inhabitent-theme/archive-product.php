@@ -8,7 +8,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-<div class="container">
+
 			<header class="page-header">
 				<h2>Shop Stuff</h2>
 			</header><!-- .page-header -->
@@ -31,7 +31,7 @@ get_header(); ?>
 				<?php endif; ?>
 			</div>
 
-</div>
+			
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
