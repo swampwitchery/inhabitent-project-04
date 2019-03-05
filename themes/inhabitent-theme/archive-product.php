@@ -4,14 +4,13 @@
  *
  * @package RED_Starter_Theme
  */
-
 get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+<div class="container">
 			<header class="page-header">
-				<h1>Shop Stuff</h1>
+				<h2>Shop Stuff</h2>
 			</header><!-- .page-header -->
 
 			<div class="product-loop">
@@ -32,9 +31,8 @@ get_header(); ?>
 				<?php endif; ?>
 			</div>
 
-			
+</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
 
 <?php get_footer(); ?>

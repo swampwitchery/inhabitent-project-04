@@ -279,7 +279,7 @@ textarea {
   font-family: Merriweather, sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.75; }
 
 /* Headings */
 h1,
@@ -291,11 +291,26 @@ h6 {
   font-family: Novecento Sans Web, sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  clear: both; }
+  clear: both;
+  color: #404040; }
+
+.home h2 {
+  width: 1180px;
+  text-align: center;
+  padding: 2rem;
+  font-size: 2.6em;
+  font-weight: normal;
+  font-style: normal;
+  color: #2f1339;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
 
 /* Copy */
 p {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  font-size: 16px;
+  line-height: 1.75; }
 
 dfn,
 cite,
@@ -852,35 +867,32 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Shop Stuff Area */
-.home .shop,
-.home .adventure-heading {
-  text-align: center;
-  padding: 20px;
-  font-size: 2em;
-  font-weight: normal;
-  font-style: normal; }
-
 .home .shopping-area {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+
+.home .whole-product-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1120px; }
-
-.home .product-stuff {
-  padding: 1em;
-  border: 1px solid #e1e1e1;
-  border-top-width: 5px;
-  text-align: center;
-  margin: 1%; }
-  .home .product-stuff img {
-    width: 30%;
-    height: 30%; }
-  .home .product-stuff .item-button {
+  text-align: center; }
+  .home .whole-product-area .product-stuff {
+    border: 1px solid #e1e1e1;
+    border-top: 5px solid #e1e1e1;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 25%;
+            flex: 0 1 25%;
+    max-width: 24%;
+    padding: .8rem;
+    line-height: 1.5rem; }
+    .home .whole-product-area .product-stuff img {
+      width: 4.5rem;
+      height: 4.5rem; }
+  .home .whole-product-area .item-button {
     font-family: Novecento Sans Web,sans-serif;
     font-size: .8rem;
     text-transform: uppercase;
@@ -892,7 +904,7 @@ object {
 .home h2 a {
   display: none; }
 
-.latest-post {
+.inhabitent-journal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

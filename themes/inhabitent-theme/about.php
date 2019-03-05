@@ -6,7 +6,6 @@
  * 
  * @package RED_Starter_Theme
  */
-
 get_header(); ?>
 
 	<div id="primary" class="content-area">
@@ -21,6 +20,5 @@ get_header(); ?>
 			</div>
 		</main>
 	</div>
-
 
 <?php get_footer(); ?>

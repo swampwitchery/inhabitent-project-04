@@ -7,34 +7,30 @@
 
 .home {
 
-    .shop,
-    .adventure-heading {
-        text-align: center;
-        padding: 20px;
-        font-size: 2em;
-        font-weight: normal;
-        font-style: normal;
-    }
-
     .shopping-area {
-        display: flex;
-        justify-content: space-between;
         margin-left: auto;
         margin-right: auto;
         width: 1120px;
     }
 
-    .product-stuff {
-        padding: 1em;
-        border: 1px solid #e1e1e1;
-        border-top-width: 5px;
+    .whole-product-area {
+        display: flex;
+        justify-content: space-between;
         text-align: center;
-        margin: 1%;
 
+        .product-stuff{
+            border: 1px solid #e1e1e1;
+            border-top: 5px solid #e1e1e1;
+            flex: 0 1 25%;
+            max-width: 24%;
+            padding: .8rem;
+            line-height: $base__space-unit;
+            
 
-        img {
-            width: 30%;
-            height: 30%;
+            img{
+                width: 4.5rem;
+                height: 4.5rem;
+            }
         }
 
         .item-button{
@@ -42,7 +38,8 @@
             font-size: .8rem;
             text-transform: uppercase;
             text-decoration: none;
-            background: #248a83;;
+            background: #248a83;
+
             color: #fff;
             padding: .8rem 1.5rem;
         }
@@ -53,7 +50,7 @@
     }
 }
 
-.latest-post {
+.inhabitent-journal {
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -74,9 +71,6 @@
     border: 1px solid #e1e1e1;
     text-align: center;
     margin: 1%;
-    .blog-info{
-        
-    }
 }
 
 .read-entry{
