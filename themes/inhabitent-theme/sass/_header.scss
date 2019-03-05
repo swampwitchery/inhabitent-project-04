@@ -7,8 +7,15 @@
             color: #248a83;
         }
 
-        .container {
+        .container,
+        nav {
             display: flex;
+            max-width: 1120px;
+            margin: 0 auto;
+        }
+
+        label{
+            display: none;
         }
 
         .tent-img {

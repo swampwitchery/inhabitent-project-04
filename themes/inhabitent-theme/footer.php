@@ -26,15 +26,16 @@
 						<p><strong>Saturday:</strong> 10am to 2pm</p>
 						<p><strong>Sunday:</strong> Closed</p>
 					</div>
-
 					<div class="logo">
-						<img src=<?php echo get_template_directory_uri().'/images/logos/inhabitent-logo-text.svg'?>>
-						</div>
-						</div>
-						<div class="copyright">
-							<p>Copyright &copy; 2019 Inhabitent</p>
-						</div>
-					</div><!-- #page -->	
+					<img src=<?php echo get_template_directory_uri().'/images/logos/inhabitent-logo-text.svg'?>>
+					</div>
+					</div>
+					
+					<div class="copyright">
+						<p>Copyright &copy; 2019 Inhabitent</p>
+					</div>
+
+				</div><!-- #page -->	
 			</footer><!-- #colophon -->
 	
 		<?php wp_footer(); ?>

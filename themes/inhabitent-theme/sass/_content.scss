@@ -5,6 +5,7 @@
 /* Posts and pages */
 body{
 	font-family: $font__main;
+
 }
 .sticky {
 	display: block;
@@ -51,6 +52,7 @@ body{
 	display: block;
 }
 
+
 .main-logo {
 	display: flex;
 	background: url(../../images/home-hero.jpg) no-repeat top;
@@ -78,8 +80,10 @@ body{
 		margin-bottom: 3rem;
 
 		p {
-		margin: 0 auto;
-		font-size: .85em;
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 700px;
+			font-size: .85em;
 		}
 	}
 }
@@ -143,7 +147,7 @@ body{
 		}
 
 		textarea {
-			width: 50%;
+		margin: 0 auto;
 		}
 	}
 
@@ -170,6 +174,9 @@ body{
 		padding: .8rem .8rem;
 	}
 
+	.entry-meta {
+		text-transform: uppercase;
+	}
 
 	.entry-title a {
 		border: none;
