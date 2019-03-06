@@ -66,6 +66,10 @@ body{
 /* About Page */
 .page-template {
 
+	h2{
+		font-weight: 700;
+	}
+
 	.hero-image-header {
 		height: 100vh;
 	}
@@ -76,14 +80,12 @@ body{
 	}
 
 	.about-content {
-		text-align: center;
 		margin-bottom: 3rem;
 
 		p {
 			margin-left: auto;
 			margin-right: auto;
-			max-width: 700px;
-			font-size: .85em;
+			max-width: 800px;
 		}
 	}
 }
@@ -135,9 +137,11 @@ body{
 	grid-template-columns: 2fr 1fr;
 }
 
-.widget_area {
-	text-decoration: none;
+.widget-area {
+	padding-left: 4rem;
+	padding-top: 3rem;
 }
+
 .page-template{
 
 	label {
@@ -160,34 +164,68 @@ body{
 /* Journal Page */
 
 .journal-page {
+
 	display: grid;
 	grid-template-columns: 2fr 1fr;
+	
+	img {
+		height: auto; 
+		width: 750px;
+	  }
 
 	.article-area{
-		margin-bottom: 30px;
-	}
-
-	.article-area a {
+		border-right: 1px solid #e1e1e1;
+		padding-bottom: 3rem;
+		 a {
 		font-family: Novecento Sans Web, sans-serif;
 		font-size: .8rem;
 		text-transform: uppercase;
 		text-decoration: none;
 		border: 1px solid black;
-		background: #fff;
+		background: $color__background-body;
 		color: black;
 		padding: .8rem .8rem;
 	}
+}
 
 	.entry-meta {
+		background-color: #248a83;
+		color: #fff;
+		position: absolute;
+		padding: .5rem 1rem;
+		bottom: 8px;
+		right: 2.3rem;
 		text-transform: uppercase;
+		font-family: Novecento Sans Web, sans-serif;
 	}
 
-	.entry-title a {
-		border: none;
-	}
+	.entry-title {
+		position: absolute;
+		top: 0;
 
-	.entry-header img {
-		margin-top: 30px;
+		a {
+		background-color: $color__link;
+		border: none;	
+		font-size: 2rem;
+		color: #fff;
 	}
 }
+
+	.entry-header {
+		position: relative;
+		margin-top: 4rem;
+
+}
+}
+
+.journal-content-area{
+	padding-top: 50px;
+}
+
+.journal-page{
+	margin-left: auto;
+    margin-right: auto;
+    max-width: 1180px;
+}
+
 

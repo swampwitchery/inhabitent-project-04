@@ -294,7 +294,8 @@ h6 {
   color: #404040; }
 
 .home h2,
-.post-type-archive h2 {
+.post-type-archive h2,
+.page-template h2 {
   width: 1180px;
   text-align: center;
   padding-top: 2rem;
@@ -413,9 +414,7 @@ dd {
 
 img {
   height: auto;
-  /* Make sure images are scaled correctly. */
-  max-width: 100%;
-  /* Adhere to container width. */ }
+  max-width: 100%; }
 
 table {
   margin: 0 0 1.5rem;
@@ -484,7 +483,8 @@ textarea {
   background-color: rgba(255, 255, 255, 0.7);
   position: fixed;
   width: 100%;
-  border-bottom: 1px solid #e1e1e1; }
+  border-bottom: 1px solid #e1e1e1;
+  z-index: 99999; }
   .site-header .container {
     width: 1180px;
     margin-left: auto;
@@ -734,6 +734,9 @@ body {
           align-items: center; }
 
 /* About Page */
+.page-template h2 {
+  font-weight: 700; }
+
 .page-template .hero-image-header {
   height: 100vh; }
 
@@ -742,13 +745,11 @@ body {
   font-size: 3em; }
 
 .page-template .about-content {
-  text-align: center;
   margin-bottom: 3rem; }
   .page-template .about-content p {
     margin-left: auto;
     margin-right: auto;
-    max-width: 700px;
-    font-size: .85em; }
+    max-width: 800px; }
 
 /* Products Page */
 .post-type-archive h2 {
@@ -787,8 +788,9 @@ body {
   display: grid;
   grid-template-columns: 2fr 1fr; }
 
-.widget_area {
-  text-decoration: none; }
+.widget-area {
+  padding-left: 4rem;
+  padding-top: 3rem; }
 
 .page-template label {
   font-family: Novecento Sans Web, sans-serif;
@@ -804,23 +806,49 @@ body {
 .journal-page {
   display: grid;
   grid-template-columns: 2fr 1fr; }
+  .journal-page img {
+    height: auto;
+    width: 750px; }
   .journal-page .article-area {
-    margin-bottom: 30px; }
-  .journal-page .article-area a {
-    font-family: Novecento Sans Web, sans-serif;
-    font-size: .8rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    border: 1px solid black;
-    background: #fff;
-    color: black;
-    padding: .8rem .8rem; }
+    border-right: 1px solid #e1e1e1;
+    padding-bottom: 3rem; }
+    .journal-page .article-area a {
+      font-family: Novecento Sans Web, sans-serif;
+      font-size: .8rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid black;
+      background: #fff;
+      color: black;
+      padding: .8rem .8rem; }
   .journal-page .entry-meta {
-    text-transform: uppercase; }
-  .journal-page .entry-title a {
-    border: none; }
-  .journal-page .entry-header img {
-    margin-top: 30px; }
+    background-color: #248a83;
+    color: #fff;
+    position: absolute;
+    padding: .5rem 1rem;
+    bottom: 8px;
+    right: 2.3rem;
+    text-transform: uppercase;
+    font-family: Novecento Sans Web, sans-serif; }
+  .journal-page .entry-title {
+    position: absolute;
+    top: 0; }
+    .journal-page .entry-title a {
+      background-color: #248A83;
+      border: none;
+      font-size: 2rem;
+      color: #fff; }
+  .journal-page .entry-header {
+    position: relative;
+    margin-top: 4rem; }
+
+.journal-content-area {
+  padding-top: 50px; }
+
+.journal-page {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1180px; }
 
 /*--------------------------------------------------------------
 # Media
