@@ -12,6 +12,11 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
+		<h1>
+                <?php echo str_replace("Product Type: ", "", get_the_archive_title()); ?>
+            </h1>
+            <?php the_archive_description('<div class="taxonomy-description">', '</div>');
+            ?>
 
       <section class="product-loop">
 			<?php $product_items=get_terms('product_type');?>

@@ -36,8 +36,9 @@ input[type="password"],
 input[type="search"],
 textarea {
 	color: #666;
-	border: 1px solid #ccc;
+	border: 1px solid #e1e1e1;
 	border-radius: 0px;
+	background-color: $color__background-screen;
 
 	&:focus {
 		color: #111;
@@ -49,7 +50,7 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-	padding: 3px;
+	padding: 6px;
 }
 
 textarea {

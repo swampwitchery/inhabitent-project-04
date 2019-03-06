@@ -5,7 +5,7 @@
 /* Posts and pages */
 body{
 	font-family: $font__main;
-
+	color: $color__text-main;
 }
 .sticky {
 	display: block;
@@ -67,7 +67,7 @@ body{
 .page-template {
 
 	h2{
-		font-weight: 700;
+		font-weight: bold;
 	}
 
 	.hero-image-header {
@@ -92,8 +92,7 @@ body{
 
 /* Products Page */
 
-.post-type-archive {
-
+.post-type-archive-product {
 
 	h2{
 		font-weight: bold;
@@ -101,7 +100,7 @@ body{
 	}
 
 	.product-loop {
-		max-width: 1180px;
+		max-width: 1120px;
 		margin: 0 auto;
 		display: flex;
 		justify-content: center;
@@ -119,7 +118,7 @@ body{
 	}
 
 	.archive-product-list {
-		max-width: 1180px;
+		max-width: 1120px;
 		margin: 0 auto;
 		grid-gap: 1.5rem;
 		padding-top: 30px;
@@ -130,53 +129,24 @@ body{
 	}
 }
 
-/* Find Us Page */
-
-.find-us-area {
-	display: grid;
-	grid-template-columns: 2fr 1fr;
-}
-
-.widget-area {
-	padding-left: 4rem;
-	padding-top: 3rem;
-}
-
-.page-template{
-
-	label {
-		font-family: Novecento Sans Web, sans-serif;
-		text-transform: uppercase;
-	}
-
-	.entry-content {
-		iframe {
-			border: none;
-		}
-
-		textarea {
-		margin: 0 auto;
-		}
-	}
-
-}
-
 /* Journal Page */
 
 .journal-page {
 
 	display: grid;
 	grid-template-columns: 2fr 1fr;
-	
+
 	img {
 		height: auto; 
 		width: 750px;
 	  }
 
-	.article-area{
+	.article-area {
 		border-right: 1px solid #e1e1e1;
 		padding-bottom: 3rem;
-		 a {
+		padding-right: 4rem;
+
+	a {
 		font-family: Novecento Sans Web, sans-serif;
 		font-size: .8rem;
 		text-transform: uppercase;
@@ -194,7 +164,7 @@ body{
 		position: absolute;
 		padding: .5rem 1rem;
 		bottom: 8px;
-		right: 2.3rem;
+		right: 0;
 		text-transform: uppercase;
 		font-family: Novecento Sans Web, sans-serif;
 	}
@@ -214,7 +184,6 @@ body{
 	.entry-header {
 		position: relative;
 		margin-top: 4rem;
-
 }
 }
 
@@ -225,7 +194,125 @@ body{
 .journal-page{
 	margin-left: auto;
     margin-right: auto;
-    max-width: 1180px;
+    max-width: 1120px;
 }
 
+/* Find Us Page */
 
+.widget-area {
+	padding-left: 4rem;
+	padding-top: 3rem;
+}
+
+.page-id-2{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1120px;
+
+	.site-main {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		padding-top: 45px;
+		
+		.type-page{
+			border-right: 1px solid #e1e1e1;
+			padding-right: 4rem;
+			padding-bottom: 6rem;
+			margin: 0;
+		}
+	}
+
+	h1{
+		font-size: 2.6em;
+		color: $color__text-main;
+	}
+
+	h2{
+		color: $color__text-screen;
+	}
+
+	label {
+		color: #2f1339;
+		font-size: 1.1rem;
+		font-family: Novecento Sans Web, sans-serif;
+		text-transform: uppercase;
+		margin-bottom: 1rem;
+
+		.star{
+			color: $compliment__color;
+		}
+	}
+
+	.entry-content {
+
+
+		h2{
+			font-size: 2.4em;
+		}
+
+		figure{
+			margin: 0 auto;
+		}
+		
+		iframe {
+			border: none;
+		}
+	}
+
+	form{
+		p{
+			margin-bottom: 0;
+		}
+	}
+}
+
+/* 404 Page */
+
+.error404{
+
+	h1{
+		font-size: 2.2rem;
+	}
+	h2{
+		font-size: 1.5rem;
+		color: $color__text-screen;
+	}
+
+	.not-found{
+		border-right: 1px solid #e1e1e1;
+		padding-right: 4rem;
+		padding-bottom: 6rem;
+	}
+	.site-content{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1120px;
+	}
+	.site-main{
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		padding-top: 45px;
+	}
+	.page-content{
+
+		fieldset{
+			padding: 0;
+			button{
+				display: none;
+			}
+		}
+		
+		ul{
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+		}
+		li a{
+			text-decoration: none;
+		}
+		
+		.cat-item-1{
+			display: none;
+		}
+	}
+}
