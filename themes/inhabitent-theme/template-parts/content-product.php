@@ -16,7 +16,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<span><?php echo CFS()->get('product_price'); ?></span>
+	<span class="product-price"><?php echo CFS()->get('product_price'); ?></span>
 
 	<div class="entry-content">
 		<?php the_content(); ?>
