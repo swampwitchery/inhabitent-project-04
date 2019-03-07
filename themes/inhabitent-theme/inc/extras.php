@@ -2,7 +2,7 @@
 /**
  * Custom functions that act independently of the theme templates.
  *
- * @package inhabitent_theme
+ * @package Inhabitenttheme
  */
 
 /**

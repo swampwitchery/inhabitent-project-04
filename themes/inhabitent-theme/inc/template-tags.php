@@ -2,7 +2,7 @@
 /**
  * Custom template tags for this theme.
  *
- * @package inhabitent_theme
+ * @package Inhabitenttheme
  */
 
  /**

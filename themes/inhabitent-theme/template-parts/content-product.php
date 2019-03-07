@@ -2,7 +2,7 @@
 /**
  * Template part for displaying single posts.
  *
- * @package RED_Academy_Theme
+ * @package Inhabitent_Theme
  */
 
 ?>

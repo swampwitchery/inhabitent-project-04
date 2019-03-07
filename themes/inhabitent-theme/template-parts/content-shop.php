@@ -2,7 +2,7 @@
 /**
  * Template part for displaying single posts.
  *
- * @package RED_Academy_Theme
+ * @package Inhabitent_Theme
  */
 
 ?>
@@ -16,9 +16,6 @@
 
 	<p><?php echo CFS()->get('product_price'); ?></p>
 
-	<footer class="entry-footer">
-		<?php inhabitent_theme_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 	</div>
 
 </article><!-- #post-## -->
