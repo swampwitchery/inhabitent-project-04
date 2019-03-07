@@ -39,12 +39,13 @@ get_header(); ?>
                      <?php if(has_post_thumbnail()): ?>
                      <?php the_post_thumbnail('large'); ?>
 
-
+                  <div class="text-wrapper">
                      <?php
                         the_date();
                         echo comments_number();
-                        the_title();
                         ?>
+                  </div>
+                     <h3 class="three-post-title"><a href=<?php echo get_permalink();?>><?php the_title(); ?></a></h3>
                      <a href="<?php the_permalink(); ?>" class="read-entry">Read Entry</a>
 
                      <?php endif; ?>
@@ -55,13 +56,27 @@ get_header(); ?>
             </div>
          </section>
 
-         <section class="latest-adventures">
          <h2 class="adventure-heading"> Latest Adventures </h2>
-         <p>Getting Back to Nature in a Canoe</p>
-            <p>A Night with Friends at the Beach</p>
-            <p>Taking in the View at Big Mountain</p>
-            <p>Star-Gazing at the Night Sky</p>
+         
+         <section class="latest-adventures">
+            <div class="canoe">
+               <p>Getting Back to Nature in a Canoe</p>
+               <button type='button'>Read More</button>
+         </div>
+            <div class="beach">
+               <p>A Night with Friends at the Beach</p>
+               <button type='button'>Read More</button>
+            </div>
+            <div class="big-mountain">
+               <p>Taking in the View at Big Mountain</p>
+               <button type='button'>Read More</button>
+            </div>
+            <div class="night-sky">
+               <p>Star-Gazing at the Night Sky</p>
+               <button type='button'>Read More</button>
+            </div>
          </section>   
+         <button type='button'>Read More</button>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

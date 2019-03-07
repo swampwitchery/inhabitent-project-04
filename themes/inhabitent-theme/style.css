@@ -479,6 +479,35 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+.search-button form {
+  display: inline-block; }
+  .search-button form fieldset .fa-search {
+    color: #248A83;
+    padding-top: 17px; }
+  .search-button form fieldset ::-webkit-input-placeholder {
+    text-transform: uppercase;
+    color: #f0e4d1;
+    font-family: Novecento Sans Web, sans-serif; }
+  .search-button form fieldset ::-ms-input-placeholder {
+    text-transform: uppercase;
+    color: #f0e4d1;
+    font-family: Novecento Sans Web, sans-serif; }
+  .search-button form fieldset ::placeholder {
+    text-transform: uppercase;
+    color: #f0e4d1;
+    font-family: Novecento Sans Web, sans-serif; }
+  .search-button form fieldset .search-field {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    width: 0; }
+    .search-button form fieldset .search-field:focus {
+      outline: none; }
+  .search-button form fieldset .clicked {
+    width: 200px; }
+
 .site-header {
   background-color: rgba(255, 255, 255, 0.7);
   position: fixed;
@@ -513,8 +542,6 @@ textarea {
     color: #248a83;
     padding: 0px;
     padding-top: 1px; }
-  .site-header .fa-search {
-    padding: 1rem; }
   .site-header .search-submit {
     float: left; }
 
@@ -819,10 +846,15 @@ object {
             flex: 0 1 25%;
     max-width: 24%;
     padding: .8rem;
-    line-height: 1.5rem; }
+    line-height: 1.5rem;
+    padding-bottom: 2rem; }
     .home .whole-product-area .product-stuff img {
       width: 4.5rem;
       height: 4.5rem; }
+  .home .whole-product-area .product-stuff:hover {
+    color: #d99054;
+    border: 1px solid #d99054;
+    border-top: 5px solid #d99054; }
   .home .whole-product-area .item-button {
     font-family: Novecento Sans Web,sans-serif;
     font-size: .8rem;
@@ -842,6 +874,43 @@ object {
 
 .home h2 a {
   display: none; }
+
+.home .latest-adventures {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 2fr;
+  grid-gap: 20px;
+  height: 36em;
+  margin: 80px 200px; }
+  .home .latest-adventures p {
+    color: #FFF;
+    font-size: 1.75rem; }
+  .home .latest-adventures button {
+    margin-left: 10px; }
+  .home .latest-adventures .canoe {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../images/adventure-photos/canoe-girl.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/adventure-photos/canoe-girl.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column: 1/span 2;
+    grid-row: 1/span 2; }
+    .home .latest-adventures .canoe p {
+      font-size: 2.75rem; }
+  .home .latest-adventures .beach {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../images/adventure-photos/beach-bonfire.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/adventure-photos/beach-bonfire.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column: 3/span 2;
+    grid-row: 1/span 1; }
+  .home .latest-adventures .big-mountain {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../images/adventure-photos/mountain-hikers.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/adventure-photos/mountain-hikers.jpg) no-repeat;
+    background-size: cover; }
+  .home .latest-adventures .night-sky {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../images/adventure-photos/night-sky.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/adventure-photos/night-sky.jpg) no-repeat;
+    background-size: cover; }
 
 .inhabitent-journal {
   display: -webkit-box;
@@ -877,6 +946,18 @@ object {
   border: 1px solid #e1e1e1;
   text-align: center;
   margin: 1%; }
+  .single-three-post img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 300px; }
+
+.three-post-title {
+  margin: 0; }
+  .three-post-title a {
+    line-height: 1.2;
+    text-decoration: none;
+    font-size: 1.4rem; }
 
 .read-entry {
   font-family: Novecento Sans Web,sans-serif;
@@ -894,6 +975,9 @@ object {
 
 .page-template .hero-image-header {
   height: 100vh; }
+
+.page-template .entry-content {
+  margin: 0; }
 
 .page-template .entry-title {
   color: #fff;
@@ -1031,40 +1115,46 @@ object {
   padding-left: 4rem;
   padding-top: 3rem; }
 
-.page-id-2 {
+.page-id-2 .site-main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-top: 45px;
   margin-left: auto;
   margin-right: auto;
   max-width: 1120px; }
-  .page-id-2 .site-main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    padding-top: 45px; }
-    .page-id-2 .site-main .type-page {
-      border-right: 1px solid #e1e1e1;
-      padding-right: 4rem;
-      padding-bottom: 6rem;
-      margin: 0; }
-  .page-id-2 h1 {
-    font-size: 2.6em;
-    color: #404040; }
-  .page-id-2 h2 {
-    color: #2f1339; }
-  .page-id-2 label {
-    color: #2f1339;
-    font-size: 1.1rem;
-    font-family: Novecento Sans Web, sans-serif;
-    text-transform: uppercase;
-    margin-bottom: 1rem; }
-    .page-id-2 label .star {
-      color: #d99054; }
-  .page-id-2 .entry-content h2 {
-    font-size: 2.4em; }
-  .page-id-2 .entry-content figure {
-    margin: 0 auto; }
-  .page-id-2 .entry-content iframe {
-    border: none; }
-  .page-id-2 form p {
-    margin-bottom: 0; }
+  .page-id-2 .site-main .type-page {
+    border-right: 1px solid #e1e1e1;
+    padding-right: 4rem;
+    padding-bottom: 6rem;
+    margin: 0; }
+
+.page-id-2 h1 {
+  font-size: 2.6em;
+  color: #404040; }
+
+.page-id-2 h2 {
+  color: #2f1339; }
+
+.page-id-2 label {
+  color: #2f1339;
+  font-size: 1.1rem;
+  font-family: Novecento Sans Web, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1rem; }
+  .page-id-2 label .star {
+    color: #d99054; }
+
+.page-id-2 .entry-content h2 {
+  font-size: 2.4em; }
+
+.page-id-2 .entry-content figure {
+  margin: 0 auto; }
+
+.page-id-2 .entry-content iframe {
+  border: none; }
+
+.page-id-2 form p {
+  margin-bottom: 0; }
 
 /* 404 Page */
 .error404 h1 {
@@ -1122,12 +1212,26 @@ object {
 .tax-product_type .type-product {
   display: grid; }
 
+/* Single Product */
+.product-template-default .site-content {
+  padding-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1120px;
+  text-align: center; }
+
 .site-footer {
   background: url(../../images/dark-wood.png) center repeat;
   font-size: 16px;
   color: #fff;
   line-height: 1.50;
   height: 350px; }
+  .site-footer a {
+    text-decoration: none;
+    color: #fff; }
+  .site-footer .media-icons i {
+    font-size: 20px;
+    margin-right: 5px; }
   .site-footer img {
     max-width: 70%; }
 

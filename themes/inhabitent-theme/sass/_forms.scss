@@ -57,3 +57,35 @@ textarea {
 	padding-left: 3px;
 	width: 100%;
 }
+
+.search-button{
+	form{
+		display: inline-block;
+		fieldset{
+			
+			.fa-search{
+				color:$color__link;
+				padding-top: 17px;
+			}
+		
+			::placeholder{
+				text-transform: uppercase;
+				color:#f0e4d1;
+				font-family: Novecento Sans Web, sans-serif;
+			}
+			.search-field{
+				display: inline-block;
+				background-color: transparent;
+				border: none;
+				transition: all 1s ease-in-out;
+				width:0;
+				&:focus{
+					outline:none;
+				}
+			}
+			.clicked{
+				width:200px;
+			}
+		}
+	}
+}

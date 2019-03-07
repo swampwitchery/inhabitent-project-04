@@ -1,25 +1,15 @@
 (function($) {
-
-    let $searchEvent = $('.main-navigation .search-field');
-
-        $('.search-field').attr("placeholder", "Type and press enter...");
-        $('.search-field').hide();
-      
-        $('.search-button').click(() => {
+ 
+        $('.icon-search').on('click',event => {
             event.preventDefault();
-          $('header .search-field').show('slow');
-          $(document).on('keypress', function(event) {
-              if ($searchEvent.val() !== '') {
-                if (event.which == 13) {
-                  $('.search-form').submit();
+          $('.search-field').toggleClass('clicked');
+          $('.search-field').focus();
+        });
+          $('.search-field').on('blur',()=> {
+              if ($('.search-field').val().length >0) {
+                return false;
                 }
-              }
+                $('.search-field').removeClass('clicked');
           });
-        });
-        
-        $('header .search-field').on('blur', function () {
-          $('header .search-field').hide(500);
-        });
-      
-
+  
 })( jQuery );
