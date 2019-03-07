@@ -983,7 +983,6 @@ object {
   color: black;
   padding: .8rem .8rem; }
 
-/* Latest Adventures // Home */
 /* About Page */
 .page-template h2 {
   font-weight: bold; }
@@ -1005,7 +1004,7 @@ object {
     margin-right: auto;
     max-width: 800px; }
 
-/* Products Page */
+/* Shop Page */
 .post-type-archive-product .site-content {
   max-width: 1120px;
   margin-left: auto;
@@ -1049,7 +1048,20 @@ object {
     -o-object-fit: cover;
        object-fit: cover; }
   .archive-product-list p {
-    display: inline; }
+    display: inline;
+    letter-spacing: 0;
+    line-height: 1;
+    background-color: white;
+    padding-left: 13px;
+    padding-right: 5px; }
+    .archive-product-list p:before {
+      float: left;
+      width: 0;
+      white-space: nowrap;
+      content: '..................................................'; }
+  .archive-product-list span {
+    float: right;
+    padding-right: 7px; }
 
 /* Journal Page */
 .journal-page {
@@ -1110,7 +1122,6 @@ object {
   grid-template-columns: 2fr 1fr; }
 
 .single-post .content-area {
-  padding-top: 3rem;
   border-right: 1px solid #e1e1e1;
   padding-bottom: 3rem;
   padding-right: 4rem; }
@@ -1122,8 +1133,34 @@ object {
   .single-post .entry-footer .cat-links {
     margin-right: 1rem; }
 
-.single-post .entry-header img {
-  width: 100%; }
+.single-post .entry-header {
+  position: relative;
+  margin-top: 4rem; }
+  .single-post .entry-header img {
+    width: 100%; }
+
+.single-post .entry-title {
+  top: 0;
+  background-color: #248a83;
+  color: #fff;
+  position: absolute;
+  padding: .5rem 1rem;
+  text-transform: uppercase;
+  font-family: Novecento Sans Web, sans-serif;
+  max-width: 75%; }
+
+.single-post .entry-meta {
+  background-color: #248a83;
+  color: #fff;
+  position: absolute;
+  padding: .5rem 1rem;
+  bottom: 8px;
+  right: 0;
+  text-transform: uppercase;
+  font-family: Novecento Sans Web, sans-serif; }
+  .single-post .entry-meta a {
+    text-decoration: none;
+    color: #fff; }
 
 /* Find Us Page */
 .widget-area {
@@ -1228,12 +1265,26 @@ object {
   display: grid; }
 
 /* Single Product */
+.product-template-default h1 {
+  color: #d99054;
+  font-size: 2.5rem; }
+
+.product-template-default span {
+  font-family: Novecento Sans Web, sans-serif;
+  font-size: 2rem; }
+
 .product-template-default .site-content {
   padding-top: 45px;
   margin-left: auto;
   margin-right: auto;
   max-width: 1120px;
   text-align: center; }
+
+/* Archive Page */
+.date h1 {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 3rem;
+  font-size: 2.5rem; }
 
 .date .site-content {
   display: grid;
@@ -1242,6 +1293,51 @@ object {
   margin-left: auto;
   margin-right: auto;
   max-width: 1120px; }
+
+.date .content-area {
+  border-right: 1px solid #e1e1e1;
+  padding-right: 50px; }
+
+.date .have-post-loop {
+  margin-bottom: 4rem; }
+  .date .have-post-loop .read-more-button {
+    font-family: Novecento Sans Web, sans-serif;
+    font-size: .8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid black;
+    background: #fff;
+    color: black;
+    padding: .8rem .8rem; }
+
+.date .entry-header {
+  position: relative;
+  margin-top: 4rem; }
+  .date .entry-header img {
+    width: 100%; }
+
+.date .entry-title {
+  top: 0;
+  background-color: #248a83;
+  position: absolute;
+  padding: .5rem 1rem;
+  text-transform: uppercase;
+  font-family: Novecento Sans Web, sans-serif;
+  max-width: 75%; }
+  .date .entry-title a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem; }
+
+.date .entry-meta {
+  background-color: #248a83;
+  color: #fff;
+  position: absolute;
+  padding: .5rem 1rem;
+  bottom: 8px;
+  right: 0;
+  text-transform: uppercase;
+  font-family: Novecento Sans Web, sans-serif; }
 
 .site-footer {
   background: url(../../images/dark-wood.png) center repeat;

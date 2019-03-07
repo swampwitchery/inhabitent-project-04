@@ -18,6 +18,7 @@ get_header(); ?>
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
+			<div class="have-post-loop">
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -25,8 +26,10 @@ get_header(); ?>
 				<?php
 					get_template_part( 'template-parts/content' );
 				?>
+				<a href=<?php echo get_permalink();?> class="read-more-button">Read More &rarr;</a>
 
 			<?php endwhile; ?>
+			</div>
 
 			<?php the_posts_navigation(); ?>
 

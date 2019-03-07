@@ -18,4 +18,4 @@ First attempt at a Wordpress website as a RED Academy Student. Using both standa
 
 #### Screenshot
 
-<img src="../../../screenshot.png">
+<img src="../../../../screenshot.png">

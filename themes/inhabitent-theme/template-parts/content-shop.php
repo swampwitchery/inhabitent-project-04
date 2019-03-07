@@ -15,7 +15,7 @@
 
 		<?php the_title( '<p class="entry-title">', '</p>' ); ?>
 
-	<p><?php echo CFS()->get('product_price'); ?></p>
+	<span><?php echo CFS()->get('product_price'); ?></span>
 
 	</div>
 

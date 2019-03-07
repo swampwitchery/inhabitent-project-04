@@ -36,7 +36,6 @@
 		border: 1px solid $compliment__color;
 		border-top: 5px solid $compliment__color;		
 	}
-		
 
         .item-button{
             font-family: Novecento Sans Web,sans-serif;
@@ -44,7 +43,6 @@
             text-transform: uppercase;
             text-decoration: none;
             background: #248a83;
-
             color: #fff;
             padding: .8rem 1.5rem;
         }
@@ -154,10 +152,6 @@
     padding: .8rem .8rem;
 }
 
-
-/* Latest Adventures // Home */
-
-
 /* About Page */
 .page-template {
 
@@ -189,7 +183,7 @@
 	}
 }
 
-/* Products Page */
+/* Shop Page */
 
 .post-type-archive-product {
 
@@ -231,6 +225,7 @@
 	grid-template-rows: 25% 25% 25% 25%;
 	grid-template-columns: 25% 25% 25% 25%;
 
+
 	div{
 		border: 1px solid #e1e1e1;
 		margin-right: 1rem;
@@ -243,7 +238,24 @@
 	}
 	p{
 		display: inline;
+		letter-spacing: 0;
+		line-height: 1;
+		background-color: white;
+		padding-left:13px;
+		padding-right: 5px;
+
+		&:before {
+		  float: left;
+		  width: 0;
+		  white-space: nowrap;
+		  content: '..................................................';
+		}
 	}
+	span{
+		float: right;
+		padding-right: 7px;
+	}
+
 }
 
 /* Journal Page */
@@ -328,7 +340,6 @@
     }
 
     .content-area{
-        padding-top: 3rem;
         border-right: 1px solid #e1e1e1;
 		padding-bottom: 3rem;
 		padding-right: 4rem;
@@ -343,10 +354,36 @@
         }
     }
 .entry-header{
+	position: relative;
+		margin-top: 4rem;
     img{
         width: 100%;
     }
-    }
+}
+.entry-title {
+	top:0;
+	background-color: #248a83;
+	color: #fff;
+	position: absolute;
+	padding: .5rem 1rem;
+	text-transform: uppercase;
+	font-family: Novecento Sans Web, sans-serif;
+	max-width: 75%;
+}
+.entry-meta {
+	background-color: #248a83;
+	color: #fff;
+	position: absolute;
+	padding: .5rem 1rem;
+	bottom: 8px;
+	right: 0;
+	text-transform: uppercase;
+	font-family: Novecento Sans Web, sans-serif;
+a{
+	text-decoration: none;
+	color: #fff;
+}
+}
 }
 
 /* Find Us Page */
@@ -497,6 +534,14 @@
 /* Single Product */
  
 .product-template-default{
+	h1{
+		color: $compliment__color;
+		font-size: 2.5rem;
+	}
+	span{
+		font-family: Novecento Sans Web, sans-serif;
+		font-size: 2rem;
+	}
 	.site-content{
         padding-top: 45px;
         margin-left: auto;
@@ -504,9 +549,17 @@
         max-width: 1120px;
         text-align: center;
 	}
+
 }
 
+/* Archive Page */
 .date{
+
+	h1{
+		border-bottom: 1px solid #e1e1e1;
+		margin-bottom: 3rem;
+		font-size: 2.5rem;
+	}
 	.site-content{
 		display: grid;
 		grid-template-columns: 2fr 1fr;
@@ -514,6 +567,59 @@
 		margin-left: auto;
 		margin-right: auto;
 		max-width: 1120px;
+	}
+
+	.content-area{
+		border-right: 1px solid #e1e1e1;
+		padding-right: 50px;
+	}
+
+	.have-post-loop{
+		margin-bottom: 4rem;
+				.read-more-button{
+				font-family: Novecento Sans Web, sans-serif;
+				font-size: .8rem;
+				text-transform: uppercase;
+				text-decoration: none;
+				border: 1px solid black;
+				background: $color__background-body;
+				color: black;
+				padding: .8rem .8rem;
+			}
+	}
+
+	.entry-header{
+		position: relative;
+		margin-top: 4rem;
+		img{
+			width: 100%;
+		}
+	}
+	
+	.entry-title {
+		top:0;
+		background-color: #248a83;
+		position: absolute;
+		padding: .5rem 1rem;
+		text-transform: uppercase;
+		font-family: Novecento Sans Web, sans-serif;
+		max-width: 75%;
+		a{
+			color: #fff;
+			text-decoration: none;
+			font-size: 2rem;
+		}
+		
+	}
+	.entry-meta {
+		background-color: #248a83;
+		color: #fff;
+		position: absolute;
+		padding: .5rem 1rem;
+		bottom: 8px;
+		right: 0;
+		text-transform: uppercase;
+		font-family: Novecento Sans Web, sans-serif;
 	}
 }
 
