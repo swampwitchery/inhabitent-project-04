@@ -64,3 +64,29 @@ body{
 	align-items: center;
 }
 
+/* Side Bar */
+
+.widget-area{
+	.textwidget{
+		a{
+			text-decoration: none;
+		}
+	}
+	.widget_archive{
+		ul{
+			font-size: $font__size;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			li{
+				a{
+		text-decoration: none;
+				}
+			}
+		}
+	}
+
+.widget_text{
+	margin: 0;
+}
+}

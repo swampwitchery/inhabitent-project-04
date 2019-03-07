@@ -761,6 +761,21 @@ body {
       -ms-flex-align: center;
           align-items: center; }
 
+/* Side Bar */
+.widget-area .textwidget a {
+  text-decoration: none; }
+
+.widget-area .widget_archive ul {
+  font-size: 16px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  .widget-area .widget_archive ul li a {
+    text-decoration: none; }
+
+.widget-area .widget_text {
+  margin: 0; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
